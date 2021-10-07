@@ -1,13 +1,36 @@
 import React from 'react';
+import tw from 'twin.macro';
+import styled from 'styled-components'
 import './App.css';
-import { HomePage } from './app/containers/HomePage';
-
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { Home } from './app/Pages/Home';
+import { Navbar } from './app/components/navbar';
+import { About } from './app/Pages/About';
+import { Car } from './app/Pages/Car';
+import { Contact } from './app/Pages/Contact';
+import { AccountBox } from './app/components/accountBox';
 
 function App() {
   return (
-    <div className="App">
-      <HomePage/>
-    </div>
+    <Router>
+      <Switch>
+        
+        <Route path='/Signin' exact component={AccountBox} />
+        
+        <div>
+          <Navbar/>
+          <Route path='/' exact component={Home} />
+          <Route path='/Home' exact component={Home} />
+          <Route path='/AboutUs' exact component={About} />
+          <Route path='/Cars' exact component={Car} />
+          <Route path='/ContactUs' exact component={Contact} />
+          
+        </div>
+        
+        
+      </Switch>
+    </Router>
+    
   );
 }
 
