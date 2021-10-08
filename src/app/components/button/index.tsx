@@ -31,21 +31,31 @@ const BaseButton = styled.button`
     `}
 `
 const OutlinedButton = styled(BaseButton)`
+    background: linear-gradient(58deg, rgba(205,35,139,1) 20%, rgba(235,65,65,1) 100%);
+    
+    &:hover{
+        background: transparent;
+        
+    }
+    
     ${tw`
-        bg-red-500
+        
         hover:bg-transparent
         hover:text-red-500
         hover:border-red-500
     `}
 `
 const FilledButton = styled(BaseButton)`
+    background: linear-gradient(58deg, rgba(205,35,139,1) 20%, rgba(235,65,65,1) 100%);
+    
+    &:hover{
+        background: transparent;
+        
+    }
     ${tw`
         border-red-500
-        text-red-500
-        bg-transparent
-        hover:bg-red-500
-        hover:text-white
-        hover:border-transparent
+        text-white
+        hover:text-red-500
     `}
 `
 

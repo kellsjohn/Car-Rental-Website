@@ -8,7 +8,8 @@ import { Marginer } from '../marginer';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import { SCREENS } from '../responsive'
-import {Location} from '../../components/location'
+import { Location } from '../location'
+
 
 
 const CardContainer = styled.div`
@@ -117,7 +118,7 @@ export function BookCard(){
     return(
         
         <CardContainer>
-            <Location></Location>
+            <Location />
 
             <ItemContainer>
                 <Icon>

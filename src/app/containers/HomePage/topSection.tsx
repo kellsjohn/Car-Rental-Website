@@ -161,7 +161,7 @@ export function TopSection(){
                 for you and get the best quality cars for as long as you like
             </Description>
             <ButtonsContainer>
-                <Button text='Book A Car'/>
+                <Button theme='filled' text='Book A Car'/>
                 <Button theme='filled' text='Sell Your Car'/>
             </ButtonsContainer>
         </LeftContainer>
